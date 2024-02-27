@@ -1,0 +1,126 @@
+.about {
+    padding: 100px 0;
+    background-color: #fff;
+
+    @media screen and (max-width: 1024px) {
+		padding: 70px 0;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin-bottom: 50px;
+	}
+    /* .about__container */
+
+    &__container {}
+
+    /* .about__title */
+
+    &__title {}
+
+    /* .about__content */
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 1199px) {
+            flex-direction: column;
+        }
+    }
+
+    /* .about__img */
+
+    &__img {
+        width: 100%;
+        padding-bottom: 41%;
+        min-height: 400px;
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 31%;
+            min-width: 650px;
+        }
+
+        & > img {
+            border-radius: 15px;
+            @media screen and (max-width: 1199px) {
+                min-height: 400px;
+            }
+        }
+    }
+
+    /* .about__text-content */
+
+    &__text-content {}
+
+    /* .about__text-content-title */
+
+    &__text-content-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+
+        &>span {
+            color: var(--accent);
+        }
+
+        margin-bottom: 25px;
+    }
+
+    /* .about__text-content-texts */
+
+    &__text-content-texts {
+        font-weight: 500;
+        color: #A0A5AD;
+
+        &>*:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    /* .about__text-content-text */
+
+    &__text-content-text {}
+
+    /* .about__benefits */
+
+    &__benefits {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 768px) {
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    /* .about__benefit */
+
+    &__benefit {
+        text-align: center;
+    }
+
+    /* .about__benefit-title */
+
+    &__benefit-title {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--accent);
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 40px;
+        }
+
+        @media screen and (max-width: 510px) {
+            font-size: 36px;
+        }
+    }
+
+    /* .about__benefit-desc */
+
+    &__benefit-desc {
+        font-size: 20px;
+    }
+}
